@@ -1,0 +1,22 @@
+<%- include("template/head", {tituloWeb: 'Search'}) %> 
+<%- include("template/header") %> 
+
+<body>
+    <h1 class="title">Search</h1>
+    <div class="card card__note">
+        <header class="card-header">
+            <p class="card-header-title label__note">
+                <%= note.title %>
+            </p>
+            <a href="#" class="card-header-icon" aria-label="more options">
+            <span class="icon">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+            </a>
+        </header>
+        <div class="card-content">
+            <div class="content label__note"><%= note.body %></div>
+        </div>
+    </div>
+</body>
+</html>

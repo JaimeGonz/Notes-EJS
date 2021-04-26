@@ -1,0 +1,41 @@
+<%- include("template/head", {tituloWeb: 'List'}) %> 
+<%- include("template/header") %> 
+
+<body>
+    <!-- <%= notes_array %>  -->
+    <div class="container cont">
+        <h1 class="title"> Listado de Notas</h1> 
+        <!-- Left side -->
+        <div class="level-left" style="justify-content: flex-end;">
+            <div class="level-item search">
+                <form action="/search" method="post">
+                    <div class="field has-addons">
+                    <p class="control">
+                        <input class="input" type="text" placeholder="Find a note" name="title">
+                    </p>
+                    <p class="control">
+                        <button class="button">
+                        Search
+                        </button>
+                    </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <table class="table tabla-list">
+            <thead class="">
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Body</th>
+                </tr>
+            </thead>
+            <% notes_array.forEach(function(notes){ %>
+                <tr>
+                    <td><%= notes.title %></td>
+                    <td><%= notes.body %></td>
+                </tr>
+            <% }); %>
+        </table>
+    </div>
+</body>
+</html>

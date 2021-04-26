@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import "../node_modules/bulma/bulma.sass";
+
+.navbar{
+    justify-content: flex-end;
+    margin: 25px 25px;
+}
+
+.btn {
+    border-radius: 3px;
+    border: 1px solid #e1e4e8;
+    font-size: 12px;
+    padding: 3px 10px;
+}
+
+.link {
+    color: #000;
+    font-size: 18px;
+}
+
+.card__note {
+    margin: 0 auto;
+    padding-top: 35px;
+    width: 50%;
+}
+
+.label__note {
+    font-size: 20px;
+}
+
+.input__note {
+    margin-bottom: 20px;
+}
+
+.input__note-btn {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.cont {
+    width: 75%;
+    margin-top: 5rem;
+}
+
+.tabla-list {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.description {
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.student {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    height: 530px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.index__title {
+    margin-top: 200px;
+}
+
+.search {
+    margin: 30px 0 50px;
+}

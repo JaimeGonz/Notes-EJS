@@ -1,0 +1,23 @@
+<%- include("template/head", {tituloWeb: 'Remove'}) %> 
+<%- include("template/header") %> 
+
+<body>
+    <h1 class="title">Delete</h1>
+    <div class="box card__note">
+        <!-- Formulario que envia petición POST -->
+        <form action="/delete" method="post">
+            <div class="field">
+                <label for="title" class="label label__note">Title</label>
+                <div class="control input__note">
+                    <input class="input" type="text" placeholder="Ej. Nota nueva" name="title">
+                </div>
+            </div> 
+            <div class="field">
+                <div class="control input__note input__note-btn">
+                    <input class="button is-primary is-light is-outlined" type="submit" value="Eliminar Nota">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
